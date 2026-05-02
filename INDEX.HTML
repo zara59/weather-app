@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather API</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <input id="cityInput" type="text" placeholder="Enter City" />
+        <button id="searchBtn">
+          <i class="fa fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div id="temp">temperature</div>
+      <div id="tempMax">Highs</div>
+      <div id="tempMin">Lows</div>
+      <div id="windSpeed">windspeed</div>
+      <h4 id="date"></h4>
+      <img id="weather-icon" src="telescope.png" />
+    </div>
+    <script src="MAIN.JS"></script>
+  </body>
+</html>
