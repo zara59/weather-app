@@ -40,6 +40,32 @@ dateElement.textContent = `${dayName}, ${month} ${day}, ${year}`;
 const windspeed = document.getElementById("windSpeed");
 
 
+const toggleBtn = document.getElementById("themeToggle")
 
+button.addEventListener(
+    "click", () =>{
+        document.body.classList.toggle("light-mode");
+       
+        if(document.body.classList.contains("light-mode")){
+        toggleBtn.textContent = "🌙";
+    } else {
+        toggleBtn.textContent = "☀️";
+    }
+});
+
+function autoTheme(){
+    const hour = new Date().getHours();
+
+    if(hour >= 18 || hour < 6){
+        document.Body.classList.add("dark-mode");
+        document.Body.classList.remove("light-mode");
+    } else {
+        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark-mode");
+    }
+}
+
+const cityName = document.getElementById ("cityName");
+cityName.textContent = city.toUpperCase();
 
 
